@@ -7,8 +7,11 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
               
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              
             - name: Set virtul env
-              run:  
+              run: |
                 python3 -m venv .venv
                 source .venv/bin/activate
 
@@ -16,7 +19,13 @@ jobs:
               run: pip install -r requirements.txt
             
             - name: Testing app
-              run: 
-                python3 -m pytest --cov=test_app
-                coverage report -m | grep TOTAL > file.txt
+              run: |
+                python3 -m pytest --cov=test_app --cov-report=xml --cov-fail-under=70
+
+            - name: Upload coverage report as artifact
+              uses: actions/upload-artifact@v2
+              with:
+                name: coverage-report
+                path: coverage.xml
+                
                 
