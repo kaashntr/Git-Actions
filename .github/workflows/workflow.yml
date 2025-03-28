@@ -4,13 +4,19 @@ jobs:
     Test-something:
         runs-on: ubuntu-latest
         steps:
-            - name: Greetings
-              run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
-            - name: Check out repository code
-              uses: actions/checkout@v4
-            - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
-            - name: List files in the repository
-              run: |
-                ls ${{ github.workspace }}
+            - name: Checkout code
+              uses: actions/checkout@v2
+              
+            - name: Set virtul env
+              run:  
+                python3 -m venv .venv
+                source .venv/bin/activate
+
+            - name: Istall requirements
+              run: pip install -r requirements.txt
             
-            
+            - name: Testing app
+              run: 
+                python3 -m pytest --cov=test_app
+                coverage report -m | grep TOTAL > file.txt
+                
