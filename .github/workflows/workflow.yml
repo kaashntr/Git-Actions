@@ -52,7 +52,7 @@ jobs:
             - name: Building 
               run: pyinstaller -F ./myapp/app.py
 
-            - name: Append badge to README.md
+            
               
             
                 
