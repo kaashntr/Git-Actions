@@ -2,3 +2,4 @@ pytest
 pytest-cov
 scapy
 flask
+pyinstaller
