@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
               
             - name: Set up Python
               uses: actions/setup-python@v2
@@ -31,5 +31,28 @@ jobs:
               with:
                 name: coverage-report
                 path: coverage.xml
-                
+    Build-project:
+        runs-on: ubuntu-latest
+        needs: Test-something
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+              
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              
+            - name: Set virtul env
+              run: |
+                python3 -m venv .venv
+                source .venv/bin/activate
+
+            - name: Istall requirements
+              run: pip install -r requirements.txt              
+
+            - name: Building 
+              run: pyinstaller -F ./myapp/app.py
+
+            - name: Append badge to README.md
+              
+            
                 
