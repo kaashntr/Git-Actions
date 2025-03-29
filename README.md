@@ -48,7 +48,7 @@ actions logs
 
 also u can check logs in actions
 
-![Workflow workflow](https://github.com/kaashntr/Git-Actions/.github/workflows/workflow.yml/badge.svg)
+![Workflow Badge](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg)
 
 
 
