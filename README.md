@@ -1,6 +1,6 @@
 # Git-Actions
 
-====================================================================================================
+================================================================================================
 
 1.
 
@@ -14,7 +14,7 @@ logs
 
 ![Logs](https://github.com/user-attachments/assets/c0edda5b-c834-42ba-bb48-e4dd5029c85f)
 
-=====================================================================================================
+================================================================================================
 
 2.
 
@@ -47,6 +47,8 @@ actions logs
 ![image](https://github.com/user-attachments/assets/7bd9d160-c3d6-4377-8010-c22b20706753)
 
 also u can check logs in actions
+
+![Workflow workflow](https://github.com/kaashntr/Git-Actions/.github/workflows/workflow.yml/badge.svg)
 
 
 
