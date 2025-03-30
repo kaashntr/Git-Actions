@@ -49,7 +49,7 @@ jobs:
 
             - name: Update readme with status badge
               run: |
-                  echo "![Build Status](https://github.com/kaashntr/Git-Actions/.github/workflows/workflow.yml/badge.svg)" >> README.md
+                  echo "[![On pull request](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg)](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml)" >> README.md
                   git config user.name "kaashntr"
                   git config user.email "kaashntr@github.com"
                   git add README.md
