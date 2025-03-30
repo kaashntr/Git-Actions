@@ -1,6 +1,6 @@
 # Git-Actions
 
-================================================================================================
+
 
 1.
 
@@ -14,7 +14,7 @@ logs
 
 ![Logs](https://github.com/user-attachments/assets/c0edda5b-c834-42ba-bb48-e4dd5029c85f)
 
-================================================================================================
+
 
 2.
 
@@ -48,17 +48,15 @@ actions logs
 
 also u can check logs in actions
 
+3.
+
+workflow.yml (nothing else was not changed)
+
+![image](https://github.com/user-attachments/assets/f1d6d0c1-3f62-4424-88be-dbc16ac0fb55)
+
+actions logs 
+
+![image](https://github.com/user-attachments/assets/153929b5-c9b8-419f-8ca3-20d099187757)
 
 
-
-
-
-
-
-
-
-
-
-
-[![On pull request](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg)](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml)
 [![On pull request](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg)](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml)
