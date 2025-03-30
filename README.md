@@ -61,3 +61,4 @@ also u can check logs in actions
 
 
 [![On pull request](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg)](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml)
+[![On pull request](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg)](https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml)
