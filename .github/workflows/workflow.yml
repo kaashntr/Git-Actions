@@ -48,7 +48,7 @@ jobs:
               run: pyinstaller -F ./myapp/app.py
 
             - name: Get status badge
-              run: STATUS_BADGE_URL="https://github.com/${{ github.repository }}/.github/workflows/workflow/badge.svg"
+              run: STATUS_BADGE_URL="https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg"
 
             - name: Update readme with status badge
               run: |
