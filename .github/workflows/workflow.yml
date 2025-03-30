@@ -1,4 +1,4 @@
-name: On push workflow
+name: On pull request
 on:
     pull_request:
       branches:
@@ -48,7 +48,7 @@ jobs:
               run: pyinstaller -F ./myapp/app.py
 
             - name: Get status badge
-              run: STATUS_BADGE_URL="https://github.com/${{ github.repository }}/.github/workflows/workflow/badge.svg"
+              run: STATUS_BADGE_URL="https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg"
 
             - name: Update readme with status badge
               run: |
@@ -57,7 +57,7 @@ jobs:
                   git config user.email "kaashntr@github.com"
                   git add README.md
                   git commit -m "Update status badge in README"
-                  git push origin HEAD:main
+                  git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kaashntr/Git-Actions.git
                   
 
             
