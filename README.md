@@ -61,3 +61,4 @@ also u can check logs in actions
 
 
 ![Build Status]()
+![Build Status](https://github.com/kaashntr/Git-Actions/.github/workflows/workflow.yml/badge.svg)
