@@ -47,12 +47,9 @@ jobs:
             - name: Building 
               run: pyinstaller -F ./myapp/app.py
 
-            - name: Get status badge
-              run: STATUS_BADGE_URL="https://github.com/kaashntr/Git-Actions/actions/workflows/workflow.yml/badge.svg"
-
             - name: Update readme with status badge
               run: |
-                  echo "![Build Status]($STATUS_BADGE_URL)" >> README.md
+                  echo "![Build Status](https://github.com/kaashntr/Git-Actions/.github/workflows/workflow.yml/badge.svg)" >> README.md
                   git config user.name "kaashntr"
                   git config user.email "kaashntr@github.com"
                   git add README.md
