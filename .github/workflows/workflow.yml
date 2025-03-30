@@ -52,6 +52,19 @@ jobs:
             - name: Building 
               run: pyinstaller -F ./myapp/app.py
 
+            - name: Get status badge
+              run: STATUS_BADGE_URL="https://github.com/${{ github.repository }}/.github/workflows/workflow/badge.svg"
+
+            - name: Update readme with status badge
+              run: |
+                  sed -i "s|!\\[Build Status\\](.*)|![Build Status]($STATUS_BADGE_URL)|" README.md
+                  git config user.name "kaashntr"
+                  git config user.email "kaashntr@github.com"
+                  git add README.md
+                  git commit -m "Update status badge in README"
+                  git push
+                  
+
             
               
             
