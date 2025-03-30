@@ -50,7 +50,7 @@ also u can check logs in actions
 
 3.
 
-workflow.yml (nothing else was not changed)
+workflow.yml (nothing else was changed)
 
 ![image](https://github.com/user-attachments/assets/f1d6d0c1-3f62-4424-88be-dbc16ac0fb55)
 
