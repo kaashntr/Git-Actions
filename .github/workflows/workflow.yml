@@ -57,6 +57,7 @@ jobs:
                   git config user.email "kaashntr@github.com"
                   git add README.md
                   git commit -m "Update status badge in README"
+                  git pull --rebase https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kaashntr/Git-Actions.git main
                   git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kaashntr/Git-Actions.git HEAD:main
                   
 
