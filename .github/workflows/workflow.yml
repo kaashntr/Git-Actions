@@ -62,7 +62,7 @@ jobs:
                   git config user.email "kaashntr@github.com"
                   git add README.md
                   git commit -m "Update status badge in README"
-                  git push
+                  git push origin HEAD:main
                   
 
             
