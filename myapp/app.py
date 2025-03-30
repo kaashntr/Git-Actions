@@ -42,4 +42,8 @@ def calculator():
             break
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     calculator()
+=======
+    calculator()
+>>>>>>> 6c4e18dbf1febc0b03bf502c3728c351c1e67e3a
